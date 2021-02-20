@@ -1,0 +1,79 @@
+@font-size: 16px;
+
+
+table {
+  border-spacing: 0;
+}
+.px2Rem(@name,@px) {
+    @{name}: unit(@px/@font-size, rem);
+}
+
+.page-view{
+  &:before,&:after{
+    position: relative;
+    content: "";
+    margin-top:1em;
+    display: block;
+  }
+}
+
+.box{
+  background-color: white;
+  padding: .7em 1.4em;
+  box-shadow: 1px 12px 12px 0 #dcdcdc;
+
+  //box-shadow: 0 2px 2px -1px rgba(152, 162, 179, 0.3), 0 1px 5px -2px rgba(152, 162, 179, 0.3);
+  border: 1px solid #e9e9e9;
+  border-radius: 4px;
+}
+.content{
+  position: relative;
+  width: 95%;
+  margin: 1em auto;
+}
+.example-split {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  border: 1px dashed #eee;
+}
+
+
+/*滚动条*/
+.scroll {
+  overflow: auto;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
+  background: #fff;
+}
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: rgba(82, 98, 109, 0.8);
+}
+::-webkit-scrollbar-thumb:hover {
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: rgba(82, 98, 109, 1);
+}
+
+
+//
+.demo-spin-icon-load{
+  animation: ani-demo-spin 1s linear infinite;
+}
+
+//解决button 图标和字体居中显示问题
+.ivu-btn-group > .ivu-btn > span {
+  display: block;
+  vertical-align: middle;
+}

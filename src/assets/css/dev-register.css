@@ -1,0 +1,138 @@
+.dev_info_win_scroll {
+	width: 100%;
+	height: 60%;
+	float: left;
+	border-left: 1px solid #C0C0C0;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.win_content {
+	background: #FFF !important;
+}
+
+.win_content_1 {
+	width: 100%;
+	height: 150px;
+	border-bottom: 1px solid #E4E8EE;
+}
+
+.tj_1 {
+	width: 31%;
+	height: 140px;
+	margin-left: 1.5%;
+	float: left;
+	border: 1px solid #DBDBDC;
+	background: #C0C0C0;
+}
+
+.tj_CPU_title {
+	width: 98%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #000;
+	font-weight: bold;
+	font-size: 12px;
+	margin-left: 1%;
+	border-bottom: 1px solid #DBDBDC;;
+}
+
+.tj_CPU_ctn {
+	height: 109px;
+	width: 100%;
+}
+
+.tj_nc_ctn {
+	height: 109px;
+	width: 167;
+}
+
+.tj_disk_ctn {
+	height: 109px;
+	width: 167;
+}
+
+.outline {
+	display: none;
+	position: absolute;
+	left: 0;
+	width: 100%;
+    /*
+	height: 97%;
+    */
+	height: 92.6%;
+	background-color: black;
+	z-index: 1001;
+	-moz-opacity: 0.5;
+	opacity: .50;
+	filter: alpha(opacity = 50);
+}
+.outline span {
+	position: absolute;
+	top: 20%;
+	left: 45%;
+	color: #ff0000;
+	font-family:Microsoft YaHei;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+#progress-all {
+	display: none;
+	position: fixed;
+	left:0;
+	width:100%;
+	height: 100%;
+	z-index: 999;
+	left:0;top:0;
+	background-color:rgba(51, 51, 51, 0.5);
+}
+#progress {
+	display: none;
+	position: absolute;
+	width:90%;
+	height:3%;
+	font-size:20px;
+	top:45%;
+	left:5%;
+	z-index: 9999;
+}
+#progress span {
+	position: relative;
+	top:4%;
+	font-size:18px;
+}
+#loadContext {
+	position: relative;
+	width: 20%;
+	height:20%;
+	top:48%;
+	left:45%;
+	font-size:18px;
+	color: #ea5606;
+}
+
+.active {
+	padding-left: 5px;
+}
+.tableScroll {
+	height: 190px;
+}
+
+.tableScroll tbody {
+	position: absolute;
+	height:400%;
+	max-height: 135px;
+	overflow-y: auto;
+	display: block;
+}
+
+.tableScroll thead tr, .tableScroll tbody tr  {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+}
+.tableScroll thead {
+	width: calc(100% - 1em);
+}
